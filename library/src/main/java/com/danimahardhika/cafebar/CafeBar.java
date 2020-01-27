@@ -553,10 +553,8 @@ public class CafeBar {
                 isInMultiWindowMode = activity.isInMultiWindowMode();
             }
 
-            if ((params.flags & WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION) ==
-                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION) {
-                mFitSystemWindow = navigationBarHeight > 0 && !isInMultiWindowMode;
-            }
+            mFitSystemWindow = navigationBarHeight > 0 && !isInMultiWindowMode;
+
             return this;
         }
 
